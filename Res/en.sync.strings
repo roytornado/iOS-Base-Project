@@ -1,0 +1,14 @@
+/* This file is auto generated. Values modified this file will get overrided. */
+
+"TXT_ACT_Back" = "BACK";
+"TXT_ACT_Cancel" = "CANCEL";
+"TXT_ACT_Change_Lang" = "LANGUAGE";
+"TXT_ACT_Close" = "CLOSE";
+"TXT_ACT_Done" = "DONE";
+"TXT_ACT_Exit" = "EXIT";
+"TXT_ACT_Next" = "NEXT";
+"TXT_ACT_OK" = "OK";
+"TXT_ACT_Previous" = "PREVIOUS";
+"TXT_ACT_Retake" = "RETRY";
+"TXT_ACT_Start" = "START";
+"TXT_APP_Welcome" = "Hello";

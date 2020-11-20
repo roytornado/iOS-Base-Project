@@ -1,0 +1,14 @@
+/* This file is auto generated. Values modified this file will get overrided. */
+
+"TXT_ACT_Back" = "返回";
+"TXT_ACT_Cancel" = "取消";
+"TXT_ACT_Change_Lang" = "語言";
+"TXT_ACT_Close" = "關閉";
+"TXT_ACT_Done" = "確認";
+"TXT_ACT_Exit" = "離開";
+"TXT_ACT_Next" = "繼續";
+"TXT_ACT_OK" = "確認";
+"TXT_ACT_Previous" = "返回";
+"TXT_ACT_Retake" = "重試";
+"TXT_ACT_Start" = "開始";
+"TXT_APP_Welcome" = "你好";

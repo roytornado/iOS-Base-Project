@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Xm8-8N-kyP">
+    <device id="ipad12_9rounded" orientation="portrait" layout="fullscreen" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="kzs-3n-9Go">
+            <objects>
+                <navigationController navigationBarHidden="YES" id="Xm8-8N-kyP" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="PWy-Zu-TPo">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="JgQ-Kk-dN7" kind="relationship" relationship="rootViewController" id="jqS-Pl-xw3"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hMr-4S-8i7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-618" y="1012"/>
+        </scene>
+        <!--Landing View Controller-->
+        <scene sceneID="eei-p0-M8m">
+            <objects>
+                <viewController storyboardIdentifier="LandingViewController" id="JgQ-Kk-dN7" customClass="LandingViewController" customModule="BaseProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="JEg-yM-Hnr">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mainBg" translatesAutoresizingMaskIntoConstraints="NO" id="BoU-qK-IG4">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="sTG-sI-jEw">
+                                <rect key="frame" x="874" y="16" width="134" height="60"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zhf-lc-hHr" customClass="RSButton" customModule="BaseProject" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="56" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="CsC-XB-36M"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                        <state key="normal" title="English">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="touchAnimationTypeKey" value="fade"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="changeToEn" destination="JgQ-Kk-dN7" eventType="touchUpInside" id="Gi1-P8-Klc"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MNI-sz-C44" customClass="RSButton" customModule="BaseProject" customModuleProvider="target">
+                                        <rect key="frame" x="72" y="0.0" width="62" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="ytA-fC-9aq"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                        <state key="normal" title="Chinese">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="touchAnimationTypeKey" value="fade"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="changeToHant" destination="JgQ-Kk-dN7" eventType="touchUpInside" id="MkR-zO-WjG"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="925-kK-1tt" customClass="RSButton" customModule="BaseProject" customModuleProvider="target">
+                                <rect key="frame" x="80" y="1206" width="864" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="kRO-bu-3Oj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
+                                <state key="normal" title="TXT_ACT_Start">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="gradientColor1">
+                                        <color key="value" name="MainGreyText"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="gradientColor2">
+                                        <color key="value" name="MainBlue"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="gradientBackground" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="outlineKey" value="file_top"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="touchAnimationTypeKey" value="scaleUp"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="stringKey" value="TXT_ACT_Start"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="3NB-dm-iUm" kind="show" id="zb7-DM-TJ7"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TXT_APP_Welcome" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v7u-mb-pAP">
+                                <rect key="frame" x="308.5" y="654.5" width="407.5" height="57.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="48"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="stringKey" value="TXT_APP_Welcome"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="f2V-WK-dER"/>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="v7u-mb-pAP" firstAttribute="centerY" secondItem="JEg-yM-Hnr" secondAttribute="centerY" id="DW4-ww-nUH"/>
+                            <constraint firstItem="BoU-qK-IG4" firstAttribute="leading" secondItem="JEg-yM-Hnr" secondAttribute="leading" id="Gd8-Rz-Bau"/>
+                            <constraint firstAttribute="bottom" secondItem="BoU-qK-IG4" secondAttribute="bottom" id="RBW-5V-u8K"/>
+                            <constraint firstItem="f2V-WK-dER" firstAttribute="trailing" secondItem="sTG-sI-jEw" secondAttribute="trailing" constant="16" id="RT2-5T-IX9"/>
+                            <constraint firstItem="925-kK-1tt" firstAttribute="leading" secondItem="f2V-WK-dER" secondAttribute="leading" constant="80" id="WpX-Ex-euM"/>
+                            <constraint firstItem="BoU-qK-IG4" firstAttribute="top" secondItem="JEg-yM-Hnr" secondAttribute="top" id="YXb-Em-Ly5"/>
+                            <constraint firstItem="f2V-WK-dER" firstAttribute="bottom" secondItem="925-kK-1tt" secondAttribute="bottom" constant="80" id="hHf-sI-E8q"/>
+                            <constraint firstItem="v7u-mb-pAP" firstAttribute="centerX" secondItem="JEg-yM-Hnr" secondAttribute="centerX" id="nrV-Rm-lGU"/>
+                            <constraint firstAttribute="trailing" secondItem="BoU-qK-IG4" secondAttribute="trailing" id="sII-4E-fDx"/>
+                            <constraint firstItem="sTG-sI-jEw" firstAttribute="top" secondItem="f2V-WK-dER" secondAttribute="top" constant="16" id="scv-rf-wZH"/>
+                            <constraint firstItem="f2V-WK-dER" firstAttribute="trailing" secondItem="925-kK-1tt" secondAttribute="trailing" constant="80" id="zct-Xl-aSl"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="0ty-Hy-CJK"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="t51-Mx-2sS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="254.29687499999997" y="1011.5666178623718"/>
+        </scene>
+        <!--Main View Controller-->
+        <scene sceneID="JUc-Eh-dzS">
+            <objects>
+                <viewController id="3NB-dm-iUm" customClass="MainViewController" customModule="BaseProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zZv-5z-b8Z">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mainBg" translatesAutoresizingMaskIntoConstraints="NO" id="hmG-G4-Qlj">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P8X-z1-7Jl" customClass="RSButton" customModule="BaseProject" customModuleProvider="target">
+                                <rect key="frame" x="16" y="16" width="126" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="v33-Vh-ipq"/>
+                                </constraints>
+                                <state key="normal" title="TXT_ACT_Back">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="touchAnimationTypeKey" value="fade"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="stringKey" value="TXT_ACT_Back"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="back" destination="3NB-dm-iUm" eventType="touchUpInside" id="gr6-Nw-bej"/>
+                                    <action selector="changeToHant" destination="JgQ-Kk-dN7" eventType="touchUpInside" id="HB5-Pa-Opz"/>
+                                </connections>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Bj9-0P-dye" customClass="RSTableView" customModule="BaseProject" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="108" width="1024" height="1238"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="LK4-Ea-Was"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="P8X-z1-7Jl" firstAttribute="top" secondItem="LK4-Ea-Was" secondAttribute="top" constant="16" id="AT9-8T-8HR"/>
+                            <constraint firstItem="LK4-Ea-Was" firstAttribute="trailing" secondItem="Bj9-0P-dye" secondAttribute="trailing" id="Fu2-Ft-WVY"/>
+                            <constraint firstItem="P8X-z1-7Jl" firstAttribute="leading" secondItem="LK4-Ea-Was" secondAttribute="leading" constant="16" id="H9f-tw-8xb"/>
+                            <constraint firstItem="LK4-Ea-Was" firstAttribute="bottom" secondItem="Bj9-0P-dye" secondAttribute="bottom" id="HD4-8q-3Rq"/>
+                            <constraint firstAttribute="trailing" secondItem="hmG-G4-Qlj" secondAttribute="trailing" id="Jaf-q0-Ibd"/>
+                            <constraint firstItem="hmG-G4-Qlj" firstAttribute="top" secondItem="zZv-5z-b8Z" secondAttribute="top" id="Kjw-iL-zkz"/>
+                            <constraint firstItem="Bj9-0P-dye" firstAttribute="leading" secondItem="LK4-Ea-Was" secondAttribute="leading" id="M6p-gK-npm"/>
+                            <constraint firstItem="Bj9-0P-dye" firstAttribute="top" secondItem="P8X-z1-7Jl" secondAttribute="bottom" constant="32" id="O4c-aT-KA6"/>
+                            <constraint firstAttribute="bottom" secondItem="hmG-G4-Qlj" secondAttribute="bottom" id="Wu7-wD-0sE"/>
+                            <constraint firstItem="hmG-G4-Qlj" firstAttribute="leading" secondItem="zZv-5z-b8Z" secondAttribute="leading" id="gVM-dj-Zht"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Are-34-DRL"/>
+                    <connections>
+                        <outlet property="tableView" destination="Bj9-0P-dye" id="hz8-Tp-os3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zxj-Mi-Odv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1204" y="1012"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="mainBg" width="375" height="667"/>
+        <namedColor name="MainBlue">
+            <color red="0.47843137254901963" green="0.52941176470588236" blue="0.63529411764705879" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="MainGreyText">
+            <color red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
