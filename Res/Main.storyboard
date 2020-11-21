@@ -162,6 +162,20 @@
                                 <rect key="frame" x="0.0" y="108" width="1024" height="1238"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DIm-R6-qE8" customClass="RSButton" customModule="BaseProject" customModuleProvider="target">
+                                <rect key="frame" x="948" y="16" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="71Y-Ur-7Po"/>
+                                    <constraint firstAttribute="height" constant="60" id="Q8b-KR-bNs"/>
+                                </constraints>
+                                <state key="normal" image="btnBtnAddOn"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="touchAnimationTypeKey" value="scaleUp"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="add" destination="3NB-dm-iUm" eventType="touchUpInside" id="JiQ-Ab-bLu"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="LK4-Ea-Was"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -175,7 +189,9 @@
                             <constraint firstItem="Bj9-0P-dye" firstAttribute="leading" secondItem="LK4-Ea-Was" secondAttribute="leading" id="M6p-gK-npm"/>
                             <constraint firstItem="Bj9-0P-dye" firstAttribute="top" secondItem="P8X-z1-7Jl" secondAttribute="bottom" constant="32" id="O4c-aT-KA6"/>
                             <constraint firstAttribute="bottom" secondItem="hmG-G4-Qlj" secondAttribute="bottom" id="Wu7-wD-0sE"/>
+                            <constraint firstItem="DIm-R6-qE8" firstAttribute="top" secondItem="LK4-Ea-Was" secondAttribute="top" constant="16" id="a4W-K2-WDe"/>
                             <constraint firstItem="hmG-G4-Qlj" firstAttribute="leading" secondItem="zZv-5z-b8Z" secondAttribute="leading" id="gVM-dj-Zht"/>
+                            <constraint firstItem="LK4-Ea-Was" firstAttribute="trailing" secondItem="DIm-R6-qE8" secondAttribute="trailing" constant="16" id="xTn-iY-wbg"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Are-34-DRL"/>
@@ -189,6 +205,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="btnBtnAddOn" width="24" height="24"/>
         <image name="mainBg" width="375" height="667"/>
         <namedColor name="MainBlue">
             <color red="0.47843137254901963" green="0.52941176470588236" blue="0.63529411764705879" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

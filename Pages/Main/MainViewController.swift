@@ -9,7 +9,7 @@ class MainViewController: BaseViewController {
     super.viewDidLoad()
     tableView.registerNibCell(PhotoTableViewCell.self)
     tableDataManager = TableDataManager(tableView: tableView)
-    tableDataManager.willReloadTriggedByUser = { [weak self] in
+    tableDataManager.willReloadTriggedByUser = {
       DataRepository.shared.clearPhotoCaches()
     }
     tableDataManager.loadDataAtPage = { [weak self] page in
@@ -35,6 +35,13 @@ class MainViewController: BaseViewController {
       tableDataManager.addCell(data, cellClass: PhotoTableViewCell.self)
     }
     tableDataManager.finishLoading(isLoadedAll: true)
+  }
+  
+  @IBAction func add() {
+    showBlockLoading()
+    DataRepository.shared.addPhoto(title: "test", body: "body", userId: 12) { [weak self] _ in
+      self?.hideBlockLoading()
+    }
   }
 
 }

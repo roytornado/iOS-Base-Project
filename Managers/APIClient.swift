@@ -39,20 +39,20 @@ protocol APICommand {
 }
 
 enum API {
-  class UpdateDevice: APICommand {
+  class PostCreate: APICommand {
     var method: APIMethod { return .post }
-    var path: String { return "/api/devices" }
+    var path: String { return "/posts" }
     var parameters: [String: Any] = [String: Any]()
     var error: Error? = nil
-    init(deviceName: String, deviceId: String, deviceMode: String, deviceLocation: String) {
-      parameters["name"] = deviceName
-      parameters["id"] = deviceId
-      parameters["mode"] = deviceMode
-      parameters["building"] = deviceLocation
+    init(title: String, body: String, userId: Int) {
+      parameters["title"] = title
+      parameters["body"] = body
+      parameters["userId"] = userId
     }
     func handleResult(networkResult: NetworkResult) {
       if let networkError = networkResult.error { error = networkError; return }
       if let json = networkResult.json, networkResult.isSuccess {
+        LogManager.info("\(json)")
       } else {
         error = Constants.errorLoadData
       }

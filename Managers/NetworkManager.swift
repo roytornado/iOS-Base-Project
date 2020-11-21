@@ -25,7 +25,7 @@ class NetworkManager{
     switch response.result {
       case let .success(json):
         let statusCode = response.response!.statusCode
-        if statusCode == 200 {
+        if statusCode >= 200 && statusCode < 300 {
           result.isSuccess = true
           result.json = JSON(json)
         } else {

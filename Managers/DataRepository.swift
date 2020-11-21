@@ -31,4 +31,12 @@ class DataRepository {
       })
       .start()
   }
+  
+  func addPhoto(title: String, body: String, userId: Int, completion: @escaping ((_ error: Error?) -> Void)) {
+    APIClient.shared.call(api: API.PostCreate(title: title, body: body, userId: userId)) { api in
+      DispatchQueue.main.async {
+        completion(api.error)
+      }
+    }
+  }
 }
