@@ -58,16 +58,16 @@ enum API {
       }
     }
   }
-  class DemoGet: APICommand {
+  class ItinerariesFetch: APICommand {
     var method: APIMethod { return .get }
-    var path: String { return "/photos" }
+    var path: String { return "/skyscanner-prod-takehome-test/flights.json" }
     var parameters: [String: Any] = [String: Any]()
     var error: Error? = nil
-    var resultArray: [PhotoData]! = [PhotoData]()
+    var resultArray: [ItineraryData]! = [ItineraryData]()
     func handleResult(networkResult: NetworkResult) {
       if let networkError = networkResult.error { error = networkError; return }
       if let json = networkResult.json, networkResult.isSuccess {
-        resultArray = PhotoData.parseArray(jsonArray: json.arrayValue)
+        resultArray = ItineraryData.parseArray(json: json)
       } else {
         error = Constants.errorLoadData
       }

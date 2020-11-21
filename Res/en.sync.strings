@@ -12,3 +12,8 @@
 "TXT_ACT_Retake" = "RETRY";
 "TXT_ACT_Start" = "START";
 "TXT_APP_Welcome" = "Hello";
+"TXT_TRIP_Via" = "via";
+"TXT_TRIP_Hour" = "h";
+"TXT_TRIP_Min" = "m";
+"TXT_TRIP_Direct" = "Direct";
+"TXT_TRIP_Stops" = "Stops";

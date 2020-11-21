@@ -44,7 +44,7 @@ class NetworkManager{
   }
   
   @discardableResult func get(_ URLString: URLConvertible, parameters: [String: Any]? = nil, headers: [String: String], completionHandler: @escaping (NetworkResult) -> Void) -> Request {
-    let request = AF.request(URLString, method: .get, parameters: parameters, headers: HTTPHeaders(headers))
+    let request = AF.request(URLString, method: .get, parameters: parameters)
     request.responseJSON { response in
       let result = self.processResponse(response, request: request, parameters: parameters)
       completionHandler(result)

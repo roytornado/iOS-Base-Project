@@ -8,19 +8,20 @@ class SavePhotoListOp: FlowOperation {
       finishSuccessfully()
       return
     }
-    guard let photoList: [PhotoData] = getData(name: "photoList") else { return }
+    /*
+    guard let photoList: [ItineraryData] = getData(name: "photoList") else { return }
     let clonedPhotoList = photoList.map { $0.clone() }
     let realm = try! Realm()
     do {
       try realm.write {
-        realm.delete(realm.objects(PhotoData.self))
-        realm.add(clonedPhotoList)
+        //realm.delete(realm.objects(ItineraryData.self))
+        //realm.add(clonedPhotoList)
         LogManager.info("[SavePhotoListOp]: Photos Cached")
       }
       finishSuccessfully()
     } catch {
       finishWithError(error: Constants.errorLoadData)
-    }
+    }*/
   }
 }
 

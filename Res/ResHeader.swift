@@ -24,5 +24,14 @@ var TXT_ACT_Start: String { return ResString("TXT_ACT_Start") }
 
 var TXT_APP_Welcome: String { return ResString("TXT_APP_Welcome") }
 
+var TXT_TRIP_Via: String { return ResString("TXT_TRIP_Via") }
+
+var TXT_TRIP_Hour: String { return ResString("TXT_TRIP_Hour") }
+
+var TXT_TRIP_Min: String { return ResString("TXT_TRIP_Min") }
+
+var TXT_TRIP_Direct: String { return ResString("TXT_TRIP_Direct") }
+
+var TXT_TRIP_Stops: String { return ResString("TXT_TRIP_Stops") }
 
 

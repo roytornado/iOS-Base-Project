@@ -4,6 +4,10 @@ Author: Roy Ng (roytornado@gmail.com)
 Devleopers! Making your code consistency, simple, readable are the key to a good code.
 Creating things are not enough. Making it maintainable save your life (and your teammates) in the future.
 
+# Env
+- XCode 12
+- Pod 1.10.0
+
 # Frist Run
 - pod install
 - open workspace

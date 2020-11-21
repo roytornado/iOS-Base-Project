@@ -7,11 +7,8 @@ class MainViewController: BaseViewController {
   
   override func viewDidLoad() {
     super.viewDidLoad()
-    tableView.registerNibCell(PhotoTableViewCell.self)
+    tableView.registerNibCell(ItineraryTableViewCell.self)
     tableDataManager = TableDataManager(tableView: tableView)
-    tableDataManager.willReloadTriggedByUser = {
-      DataRepository.shared.clearPhotoCaches()
-    }
     tableDataManager.loadDataAtPage = { [weak self] page in
       self?.loadData(fromCache: false)
     }
@@ -19,7 +16,7 @@ class MainViewController: BaseViewController {
   }
   
   func loadData(fromCache: Bool) {
-    DataRepository.shared.loadPhotos() { results, error in
+    DataRepository.shared.loadItineraries() { results, error in
       if let error = error {
         self.showAlert(text: error.formattedError)
         self.tableDataManager.finishLoading(isLoadedAll: true)
@@ -29,19 +26,11 @@ class MainViewController: BaseViewController {
     }
   }
   
-  func bindData(results: [PhotoData]) {
-    log("bindData: Photo count -> \(results.count)")
+  func bindData(results: [ItineraryData]) {
+    log("bindData: ItineraryData count -> \(results.count)")
     for data in results {
-      tableDataManager.addCell(data, cellClass: PhotoTableViewCell.self)
+      tableDataManager.addCell(data, cellClass: ItineraryTableViewCell.self)
     }
     tableDataManager.finishLoading(isLoadedAll: true)
   }
-  
-  @IBAction func add() {
-    showBlockLoading()
-    DataRepository.shared.addPhoto(title: "test", body: "body", userId: 12) { [weak self] _ in
-      self?.hideBlockLoading()
-    }
-  }
-
 }

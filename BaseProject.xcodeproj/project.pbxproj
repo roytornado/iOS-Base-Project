@@ -8,20 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		2A6BF909518AC419BE3E64DB /* Pods_BaseProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1BD9A49C95AABCF1DB25821 /* Pods_BaseProject.framework */; };
-		56CA56372567ABE60038071B /* LoadPhotoListOp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56CA56362567ABE60038071B /* LoadPhotoListOp.swift */; };
+		56CA56372567ABE60038071B /* LoadItinerariesOp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56CA56362567ABE60038071B /* LoadItinerariesOp.swift */; };
 		56CA563A2567ABEF0038071B /* RSTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56CA56392567ABEF0038071B /* RSTableView.swift */; };
 		56CA563D2567ABF60038071B /* TableDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56CA563C2567ABF60038071B /* TableDataManager.swift */; };
 		56CA565D2567D02F0038071B /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56CA565C2567D02F0038071B /* MainViewController.swift */; };
-		56CA56602567E6350038071B /* PhotoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56CA565F2567E6350038071B /* PhotoTableViewCell.swift */; };
-		56CA56632567E69E0038071B /* PhotoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56CA56622567E69E0038071B /* PhotoTableViewCell.xib */; };
+		56CA56602567E6350038071B /* ItineraryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56CA565F2567E6350038071B /* ItineraryTableViewCell.swift */; };
+		56CA56632567E69E0038071B /* ItineraryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56CA56622567E69E0038071B /* ItineraryTableViewCell.xib */; };
 		56CA56672567F4D20038071B /* SavePhotoListOp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56CA56662567F4D20038071B /* SavePhotoListOp.swift */; };
 		56CA566E2567FD990038071B /* LoadCachedPhotoListOp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56CA566D2567FD990038071B /* LoadCachedPhotoListOp.swift */; };
+		56CA567425691BEB0038071B /* FormatUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56CA567325691BEB0038071B /* FormatUtils.swift */; };
 		56FC7FFF256790E200983E84 /* ViewUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56FC7FE0256790E200983E84 /* ViewUtils.swift */; };
 		56FC8000256790E200983E84 /* AppUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56FC7FE1256790E200983E84 /* AppUtils.swift */; };
 		56FC8001256790E200983E84 /* RSTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56FC7FE3256790E200983E84 /* RSTextField.swift */; };
 		56FC8002256790E200983E84 /* RSButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56FC7FE4256790E200983E84 /* RSButton.swift */; };
 		56FC8003256790E200983E84 /* RSStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56FC7FE5256790E200983E84 /* RSStackView.swift */; };
-		56FC8004256790E200983E84 /* PhotoData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56FC7FE7256790E200983E84 /* PhotoData.swift */; };
+		56FC8004256790E200983E84 /* ItineraryData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56FC7FE7256790E200983E84 /* ItineraryData.swift */; };
 		56FC8005256790E200983E84 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56FC7FE9256790E200983E84 /* Constants.swift */; };
 		56FC8006256790E200983E84 /* LanguageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56FC7FEA256790E200983E84 /* LanguageManager.swift */; };
 		56FC8007256790E200983E84 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56FC7FEB256790E200983E84 /* APIClient.swift */; };
@@ -44,15 +45,16 @@
 
 /* Begin PBXFileReference section */
 		47BEC8B3C34A41C56723E7E4 /* Pods-BaseProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaseProject.debug.xcconfig"; path = "Target Support Files/Pods-BaseProject/Pods-BaseProject.debug.xcconfig"; sourceTree = "<group>"; };
-		56CA56362567ABE60038071B /* LoadPhotoListOp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadPhotoListOp.swift; sourceTree = "<group>"; };
+		56CA56362567ABE60038071B /* LoadItinerariesOp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadItinerariesOp.swift; sourceTree = "<group>"; };
 		56CA56392567ABEF0038071B /* RSTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSTableView.swift; sourceTree = "<group>"; };
 		56CA563C2567ABF60038071B /* TableDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableDataManager.swift; sourceTree = "<group>"; };
 		56CA563F2567AC3B0038071B /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		56CA565C2567D02F0038071B /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
-		56CA565F2567E6350038071B /* PhotoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoTableViewCell.swift; sourceTree = "<group>"; };
-		56CA56622567E69E0038071B /* PhotoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhotoTableViewCell.xib; sourceTree = "<group>"; };
+		56CA565F2567E6350038071B /* ItineraryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItineraryTableViewCell.swift; sourceTree = "<group>"; };
+		56CA56622567E69E0038071B /* ItineraryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItineraryTableViewCell.xib; sourceTree = "<group>"; };
 		56CA56662567F4D20038071B /* SavePhotoListOp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavePhotoListOp.swift; sourceTree = "<group>"; };
 		56CA566D2567FD990038071B /* LoadCachedPhotoListOp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadCachedPhotoListOp.swift; sourceTree = "<group>"; };
+		56CA567325691BEB0038071B /* FormatUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormatUtils.swift; sourceTree = "<group>"; };
 		56FC7FA5256690F800983E84 /* BaseProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BaseProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		56FC7FB6256690FC00983E84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		56FC7FE0256790E200983E84 /* ViewUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewUtils.swift; sourceTree = "<group>"; };
@@ -60,7 +62,7 @@
 		56FC7FE3256790E200983E84 /* RSTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSTextField.swift; sourceTree = "<group>"; };
 		56FC7FE4256790E200983E84 /* RSButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSButton.swift; sourceTree = "<group>"; };
 		56FC7FE5256790E200983E84 /* RSStackView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSStackView.swift; sourceTree = "<group>"; };
-		56FC7FE7256790E200983E84 /* PhotoData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoData.swift; sourceTree = "<group>"; };
+		56FC7FE7256790E200983E84 /* ItineraryData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItineraryData.swift; sourceTree = "<group>"; };
 		56FC7FE9256790E200983E84 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		56FC7FEA256790E200983E84 /* LanguageManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LanguageManager.swift; sourceTree = "<group>"; };
 		56FC7FEB256790E200983E84 /* APIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
@@ -106,8 +108,8 @@
 		56CA56342567ABE50038071B /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				56CA565F2567E6350038071B /* PhotoTableViewCell.swift */,
-				56CA56622567E69E0038071B /* PhotoTableViewCell.xib */,
+				56CA565F2567E6350038071B /* ItineraryTableViewCell.swift */,
+				56CA56622567E69E0038071B /* ItineraryTableViewCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -116,7 +118,7 @@
 			isa = PBXGroup;
 			children = (
 				56CA566D2567FD990038071B /* LoadCachedPhotoListOp.swift */,
-				56CA56362567ABE60038071B /* LoadPhotoListOp.swift */,
+				56CA56362567ABE60038071B /* LoadItinerariesOp.swift */,
 				56CA56662567F4D20038071B /* SavePhotoListOp.swift */,
 			);
 			path = Operations;
@@ -163,6 +165,7 @@
 				56FC801A2567931700983E84 /* RSMultiLanguage.swift */,
 				56FC7FE0256790E200983E84 /* ViewUtils.swift */,
 				56FC7FE1256790E200983E84 /* AppUtils.swift */,
+				56CA567325691BEB0038071B /* FormatUtils.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -181,7 +184,7 @@
 		56FC7FE6256790E200983E84 /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				56FC7FE7256790E200983E84 /* PhotoData.swift */,
+				56FC7FE7256790E200983E84 /* ItineraryData.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -310,7 +313,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				56CA56632567E69E0038071B /* PhotoTableViewCell.xib in Resources */,
+				56CA56632567E69E0038071B /* ItineraryTableViewCell.xib in Resources */,
 				56FC8012256790E200983E84 /* en.sync.strings in Resources */,
 				56FC8013256790E200983E84 /* zh-Hant.sync.strings in Resources */,
 				56FC8011256790E200983E84 /* LaunchScreen.storyboard in Resources */,
@@ -373,15 +376,16 @@
 				56FC800C256790E200983E84 /* LogManager.swift in Sources */,
 				56FC8016256790E200983E84 /* ResHeader.swift in Sources */,
 				56FC8001256790E200983E84 /* RSTextField.swift in Sources */,
-				56CA56372567ABE60038071B /* LoadPhotoListOp.swift in Sources */,
+				56CA56372567ABE60038071B /* LoadItinerariesOp.swift in Sources */,
+				56CA567425691BEB0038071B /* FormatUtils.swift in Sources */,
 				56FC8000256790E200983E84 /* AppUtils.swift in Sources */,
 				56FC8003256790E200983E84 /* RSStackView.swift in Sources */,
-				56CA56602567E6350038071B /* PhotoTableViewCell.swift in Sources */,
+				56CA56602567E6350038071B /* ItineraryTableViewCell.swift in Sources */,
 				56FC800E256790E200983E84 /* BaseViewController.swift in Sources */,
 				56FC800A256790E200983E84 /* AppDelegate.swift in Sources */,
 				56CA566E2567FD990038071B /* LoadCachedPhotoListOp.swift in Sources */,
 				56FC8008256790E200983E84 /* NetworkManager.swift in Sources */,
-				56FC8004256790E200983E84 /* PhotoData.swift in Sources */,
+				56FC8004256790E200983E84 /* ItineraryData.swift in Sources */,
 				56CA563A2567ABEF0038071B /* RSTableView.swift in Sources */,
 				56FC801B2567931700983E84 /* RSMultiLanguage.swift in Sources */,
 				56CA56672567F4D20038071B /* SavePhotoListOp.swift in Sources */,

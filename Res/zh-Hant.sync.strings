@@ -12,3 +12,8 @@
 "TXT_ACT_Retake" = "重試";
 "TXT_ACT_Start" = "開始";
 "TXT_APP_Welcome" = "你好";
+"TXT_TRIP_Via" = "經由";
+"TXT_TRIP_Hour" = "時";
+"TXT_TRIP_Min" = "分";
+"TXT_TRIP_Direct" = "直航";
+"TXT_TRIP_Stops" = "站";

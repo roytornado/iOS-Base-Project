@@ -1,13 +1,13 @@
 import UIKit
 import Flow_iOS
 
-class LoadPhotoListOp: FlowOperation {
+class LoadItinerariesOp: FlowOperation {
   override func mainLogic() {
     if let isPhotoListLoadedFromCache: Bool = getData(name: "isPhotoListLoadedFromCache", isOptional: true), isPhotoListLoadedFromCache {
       finishSuccessfully()
       return
     }
-    APIClient.shared.call(api: API.DemoGet()) { api in
+    APIClient.shared.call(api: API.ItinerariesFetch()) { api in
       if let error = api.error {
         self.finishWithError(error: error)
       } else {
