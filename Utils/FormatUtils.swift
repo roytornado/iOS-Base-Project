@@ -8,3 +8,9 @@ extension Int {
     else { return "\(minutes)\(TXT_TRIP_Min)" }
   }
 }
+
+extension String {
+  var formattedTimeForItineraryRawTime: String {
+    return String(self.split(separator: "T").last!)
+  }
+}

@@ -68,8 +68,8 @@ class ItineraryLegData {
   var durationMins: Int = 0
   
   var airlineThumbUrl: String { return "https://logos.skyscnr.com/images/airlines/small/\(airlineId!).png" }
-  var departureTimeOnly: String { return String(departureTimeRawString.split(separator: "T").last!) }
-  var arrivalTimeOnly: String { return String(arrivalTimeRawString.split(separator: "T").last!) }
+  var departureTimeOnly: String { return departureTimeRawString.formattedTimeForItineraryRawTime }
+  var arrivalTimeOnly: String { return arrivalTimeRawString.formattedTimeForItineraryRawTime}
   var displayTime: String { return "\(departureTimeOnly) - \(arrivalTimeOnly)" }
   var displayStops: String {
     if stops == 0 { return TXT_TRIP_Direct }
