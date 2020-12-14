@@ -116,6 +116,7 @@
 		56A05DFE2583DF6500A5A655 /* ViewLayer */ = {
 			isa = PBXGroup;
 			children = (
+				56A05E6825879EA100A5A655 /* Landing */,
 				56A05E1325840C2800A5A655 /* Common */,
 				56A05DFF2583DF9300A5A655 /* PhotoList */,
 			);
@@ -150,6 +151,10 @@
 		56A05E1325840C2800A5A655 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				56FC7FDF256790E200983E84 /* Utils */,
+				56FC7FE2256790E200983E84 /* Widgets */,
+				56CA56342567ABE50038071B /* Cells */,
+				56FC7FF4256790E200983E84 /* Base */,
 				56A05E1425840C3900A5A655 /* Data */,
 			);
 			path = Common;
@@ -171,6 +176,26 @@
 				56A05E6525879ADF00A5A655 /* ModelLayerMoudles.swift */,
 			);
 			path = DI;
+			sourceTree = "<group>";
+		};
+		56A05E6825879EA100A5A655 /* Landing */ = {
+			isa = PBXGroup;
+			children = (
+				56FC7FF3256790E200983E84 /* LandingViewController.swift */,
+			);
+			path = Landing;
+			sourceTree = "<group>";
+		};
+		56A05E6925879EDB00A5A655 /* ModelLayer */ = {
+			isa = PBXGroup;
+			children = (
+				56CA56352567ABE60038071B /* Operations */,
+				56FC7FE6256790E200983E84 /* Data */,
+				56FC7FEB256790E200983E84 /* APIClient.swift */,
+				56FC7FED256790E200983E84 /* DataRepository.swift */,
+				56FC7FEC256790E200983E84 /* NetworkManager.swift */,
+			);
+			path = ModelLayer;
 			sourceTree = "<group>";
 		};
 		56CA56342567ABE50038071B /* Cells */ = {
@@ -195,17 +220,12 @@
 		56FC7F9C256690F800983E84 = {
 			isa = PBXGroup;
 			children = (
+				56A05E6925879EDB00A5A655 /* ModelLayer */,
 				56A05DFE2583DF6500A5A655 /* ViewLayer */,
 				56CA563F2567AC3B0038071B /* README.md */,
 				56FC7FA7256690F800983E84 /* BaseProject */,
-				56FC7FF1256790E200983E84 /* Pages */,
 				56FC7FE8256790E200983E84 /* Managers */,
-				56FC7FE6256790E200983E84 /* Data */,
-				56CA56352567ABE60038071B /* Operations */,
-				56CA56342567ABE50038071B /* Cells */,
 				56FC7FF7256790E200983E84 /* Res */,
-				56FC7FDF256790E200983E84 /* Utils */,
-				56FC7FE2256790E200983E84 /* Widgets */,
 				56FC7FA6256690F800983E84 /* Products */,
 				DF4FD607C7BF75749B0EDCF4 /* Pods */,
 				1E9C936F38755B6C0997A91D /* Frameworks */,
@@ -261,35 +281,15 @@
 			isa = PBXGroup;
 			children = (
 				56A05E4E25864E2500A5A655 /* DI */,
-				56FC7FEB256790E200983E84 /* APIClient.swift */,
 				56FC7FEE256790E200983E84 /* AppDelegate.swift */,
 				56FC7FE9256790E200983E84 /* Constants.swift */,
-				56FC7FED256790E200983E84 /* DataRepository.swift */,
 				56FC7FEA256790E200983E84 /* LanguageManager.swift */,
 				56FC7FF0256790E200983E84 /* LogManager.swift */,
 				56FC7FEF256790E200983E84 /* NavigationManager.swift */,
-				56FC7FEC256790E200983E84 /* NetworkManager.swift */,
 				56FC80202567A09900983E84 /* SceneDelegate.swift */,
 				56CA563C2567ABF60038071B /* TableDataManager.swift */,
 			);
 			path = Managers;
-			sourceTree = "<group>";
-		};
-		56FC7FF1256790E200983E84 /* Pages */ = {
-			isa = PBXGroup;
-			children = (
-				56FC7FF2256790E200983E84 /* Main */,
-				56FC7FF4256790E200983E84 /* Base */,
-			);
-			path = Pages;
-			sourceTree = "<group>";
-		};
-		56FC7FF2256790E200983E84 /* Main */ = {
-			isa = PBXGroup;
-			children = (
-				56FC7FF3256790E200983E84 /* LandingViewController.swift */,
-			);
-			path = Main;
 			sourceTree = "<group>";
 		};
 		56FC7FF4256790E200983E84 /* Base */ = {
