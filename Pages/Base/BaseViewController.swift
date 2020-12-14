@@ -1,11 +1,13 @@
 import UIKit
 import RSLoadingView
+import RxSwift
 
 @objc protocol ViewControllerResultDelegate {
   func onResultFromViewController(action: String, obj: Any?)
 }
   
 class BaseViewController: UIViewController, ViewControllerResultDelegate {
+  let disposeBag = DisposeBag()
   weak var delegate : ViewControllerResultDelegate?
   var chainedInputs = [UITextField]()
   var chainedInputsEndpoint: Selector!

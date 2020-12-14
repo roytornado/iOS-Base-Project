@@ -10,6 +10,9 @@ def base_pods
   pod 'RSLoadingView'
   pod 'RealmSwift'
   pod "Flow-iOS"
+  pod 'RxSwift', '6.0.0-rc.2'
+  pod 'RxCocoa', '6.0.0-rc.2'
+  pod 'Cleanse'
 end
 
 target "BaseProject" do

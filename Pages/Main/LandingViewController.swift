@@ -21,4 +21,7 @@ class LandingViewController: BaseViewController {
     NavigationManager.shared.resetHome()
   }
   
+  @IBAction func actionStart() {
+    NavigationManager.shared.navigateToPhotoList()
+  }
 }

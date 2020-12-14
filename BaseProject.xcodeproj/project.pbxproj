@@ -8,10 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		2A6BF909518AC419BE3E64DB /* Pods_BaseProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1BD9A49C95AABCF1DB25821 /* Pods_BaseProject.framework */; };
+		56A05E032583E1FA00A5A655 /* PhotoListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A05E022583E1FA00A5A655 /* PhotoListViewModel.swift */; };
+		56A05E1625840D0200A5A655 /* PaginatedViewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A05E1525840D0200A5A655 /* PaginatedViewData.swift */; };
+		56A05E5025864F8200A5A655 /* AppComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A05E4F25864F8200A5A655 /* AppComponent.swift */; };
+		56A05E54258654CC00A5A655 /* ViewLayerMoudles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A05E53258654CC00A5A655 /* ViewLayerMoudles.swift */; };
+		56A05E6625879ADF00A5A655 /* ModelLayerMoudles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A05E6525879ADF00A5A655 /* ModelLayerMoudles.swift */; };
 		56CA56372567ABE60038071B /* LoadPhotoListOp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56CA56362567ABE60038071B /* LoadPhotoListOp.swift */; };
 		56CA563A2567ABEF0038071B /* RSTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56CA56392567ABEF0038071B /* RSTableView.swift */; };
 		56CA563D2567ABF60038071B /* TableDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56CA563C2567ABF60038071B /* TableDataManager.swift */; };
-		56CA565D2567D02F0038071B /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56CA565C2567D02F0038071B /* MainViewController.swift */; };
+		56CA565D2567D02F0038071B /* PhotoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56CA565C2567D02F0038071B /* PhotoListViewController.swift */; };
 		56CA56602567E6350038071B /* PhotoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56CA565F2567E6350038071B /* PhotoTableViewCell.swift */; };
 		56CA56632567E69E0038071B /* PhotoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56CA56622567E69E0038071B /* PhotoTableViewCell.xib */; };
 		56CA56672567F4D20038071B /* SavePhotoListOp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56CA56662567F4D20038071B /* SavePhotoListOp.swift */; };
@@ -44,11 +49,16 @@
 
 /* Begin PBXFileReference section */
 		47BEC8B3C34A41C56723E7E4 /* Pods-BaseProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaseProject.debug.xcconfig"; path = "Target Support Files/Pods-BaseProject/Pods-BaseProject.debug.xcconfig"; sourceTree = "<group>"; };
+		56A05E022583E1FA00A5A655 /* PhotoListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoListViewModel.swift; sourceTree = "<group>"; };
+		56A05E1525840D0200A5A655 /* PaginatedViewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaginatedViewData.swift; sourceTree = "<group>"; };
+		56A05E4F25864F8200A5A655 /* AppComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppComponent.swift; sourceTree = "<group>"; };
+		56A05E53258654CC00A5A655 /* ViewLayerMoudles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewLayerMoudles.swift; sourceTree = "<group>"; };
+		56A05E6525879ADF00A5A655 /* ModelLayerMoudles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelLayerMoudles.swift; sourceTree = "<group>"; };
 		56CA56362567ABE60038071B /* LoadPhotoListOp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadPhotoListOp.swift; sourceTree = "<group>"; };
 		56CA56392567ABEF0038071B /* RSTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSTableView.swift; sourceTree = "<group>"; };
 		56CA563C2567ABF60038071B /* TableDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableDataManager.swift; sourceTree = "<group>"; };
 		56CA563F2567AC3B0038071B /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		56CA565C2567D02F0038071B /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		56CA565C2567D02F0038071B /* PhotoListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoListViewController.swift; sourceTree = "<group>"; };
 		56CA565F2567E6350038071B /* PhotoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoTableViewCell.swift; sourceTree = "<group>"; };
 		56CA56622567E69E0038071B /* PhotoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhotoTableViewCell.xib; sourceTree = "<group>"; };
 		56CA56662567F4D20038071B /* SavePhotoListOp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavePhotoListOp.swift; sourceTree = "<group>"; };
@@ -103,6 +113,66 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		56A05DFE2583DF6500A5A655 /* ViewLayer */ = {
+			isa = PBXGroup;
+			children = (
+				56A05E1325840C2800A5A655 /* Common */,
+				56A05DFF2583DF9300A5A655 /* PhotoList */,
+			);
+			path = ViewLayer;
+			sourceTree = "<group>";
+		};
+		56A05DFF2583DF9300A5A655 /* PhotoList */ = {
+			isa = PBXGroup;
+			children = (
+				56A05E012583DFD000A5A655 /* View */,
+				56A05E002583DFCB00A5A655 /* ViewModel */,
+			);
+			path = PhotoList;
+			sourceTree = "<group>";
+		};
+		56A05E002583DFCB00A5A655 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				56A05E022583E1FA00A5A655 /* PhotoListViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		56A05E012583DFD000A5A655 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				56CA565C2567D02F0038071B /* PhotoListViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		56A05E1325840C2800A5A655 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				56A05E1425840C3900A5A655 /* Data */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		56A05E1425840C3900A5A655 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				56A05E1525840D0200A5A655 /* PaginatedViewData.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		56A05E4E25864E2500A5A655 /* DI */ = {
+			isa = PBXGroup;
+			children = (
+				56A05E4F25864F8200A5A655 /* AppComponent.swift */,
+				56A05E53258654CC00A5A655 /* ViewLayerMoudles.swift */,
+				56A05E6525879ADF00A5A655 /* ModelLayerMoudles.swift */,
+			);
+			path = DI;
+			sourceTree = "<group>";
+		};
 		56CA56342567ABE50038071B /* Cells */ = {
 			isa = PBXGroup;
 			children = (
@@ -125,6 +195,7 @@
 		56FC7F9C256690F800983E84 = {
 			isa = PBXGroup;
 			children = (
+				56A05DFE2583DF6500A5A655 /* ViewLayer */,
 				56CA563F2567AC3B0038071B /* README.md */,
 				56FC7FA7256690F800983E84 /* BaseProject */,
 				56FC7FF1256790E200983E84 /* Pages */,
@@ -189,6 +260,7 @@
 		56FC7FE8256790E200983E84 /* Managers */ = {
 			isa = PBXGroup;
 			children = (
+				56A05E4E25864E2500A5A655 /* DI */,
 				56FC7FEB256790E200983E84 /* APIClient.swift */,
 				56FC7FEE256790E200983E84 /* AppDelegate.swift */,
 				56FC7FE9256790E200983E84 /* Constants.swift */,
@@ -216,7 +288,6 @@
 			isa = PBXGroup;
 			children = (
 				56FC7FF3256790E200983E84 /* LandingViewController.swift */,
-				56CA565C2567D02F0038071B /* MainViewController.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -369,13 +440,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				56CA563D2567ABF60038071B /* TableDataManager.swift in Sources */,
-				56CA565D2567D02F0038071B /* MainViewController.swift in Sources */,
+				56CA565D2567D02F0038071B /* PhotoListViewController.swift in Sources */,
 				56FC800C256790E200983E84 /* LogManager.swift in Sources */,
 				56FC8016256790E200983E84 /* ResHeader.swift in Sources */,
+				56A05E1625840D0200A5A655 /* PaginatedViewData.swift in Sources */,
+				56A05E032583E1FA00A5A655 /* PhotoListViewModel.swift in Sources */,
 				56FC8001256790E200983E84 /* RSTextField.swift in Sources */,
+				56A05E5025864F8200A5A655 /* AppComponent.swift in Sources */,
 				56CA56372567ABE60038071B /* LoadPhotoListOp.swift in Sources */,
 				56FC8000256790E200983E84 /* AppUtils.swift in Sources */,
 				56FC8003256790E200983E84 /* RSStackView.swift in Sources */,
+				56A05E6625879ADF00A5A655 /* ModelLayerMoudles.swift in Sources */,
 				56CA56602567E6350038071B /* PhotoTableViewCell.swift in Sources */,
 				56FC800E256790E200983E84 /* BaseViewController.swift in Sources */,
 				56FC800A256790E200983E84 /* AppDelegate.swift in Sources */,
@@ -391,6 +466,7 @@
 				56FC7FFF256790E200983E84 /* ViewUtils.swift in Sources */,
 				56FC800B256790E200983E84 /* NavigationManager.swift in Sources */,
 				56FC80212567A09A00983E84 /* SceneDelegate.swift in Sources */,
+				56A05E54258654CC00A5A655 /* ViewLayerMoudles.swift in Sources */,
 				56FC8007256790E200983E84 /* APIClient.swift in Sources */,
 				56FC800D256790E200983E84 /* LandingViewController.swift in Sources */,
 				56FC8009256790E200983E84 /* DataRepository.swift in Sources */,

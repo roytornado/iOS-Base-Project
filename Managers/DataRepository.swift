@@ -7,6 +7,7 @@ class DataRepository {
   
   static var shared = DataRepository()
   
+  
   func clearPhotoCaches() {
     let realm = try! Realm()
     do {
@@ -19,9 +20,9 @@ class DataRepository {
   
   func loadPhotos(completion: @escaping ((_ results: [PhotoData], _ error: Error?) -> Void)) {
     Flow()
-      .add(operation: LoadCachedPhotoListOp())
+      //.add(operation: LoadCachedPhotoListOp())
       .add(operation: LoadPhotoListOp())
-      .add(operation: SavePhotoListOp())
+      //.add(operation: SavePhotoListOp())
       .setDidFinishBlock(block: { flow in
         if let photoList = flow.dataBucket["photoList"] as? [PhotoData] {
           DispatchQueue.main.async { completion(photoList, nil) }

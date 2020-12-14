@@ -1,5 +1,6 @@
 PODS:
   - Alamofire (5.4.0)
+  - Cleanse (4.2.6)
   - Flow-iOS (1.0.1)
   - Kingfisher (5.15.7):
     - Kingfisher/Core (= 5.15.7)
@@ -10,35 +11,52 @@ PODS:
   - RealmSwift (10.1.3):
     - Realm (= 10.1.3)
   - RSLoadingView (1.1.3)
+  - RxCocoa (6.0.0-rc.2):
+    - RxRelay (= 6.0.0-rc.2)
+    - RxSwift (= 6.0.0-rc.2)
+  - RxRelay (6.0.0-rc.2):
+    - RxSwift (= 6.0.0-rc.2)
+  - RxSwift (6.0.0-rc.2)
   - SwiftyJSON (5.0.0)
 
 DEPENDENCIES:
   - Alamofire
+  - Cleanse
   - Flow-iOS
   - Kingfisher
   - RealmSwift
   - RSLoadingView
+  - RxCocoa (= 6.0.0-rc.2)
+  - RxSwift (= 6.0.0-rc.2)
   - SwiftyJSON
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
     - Alamofire
+    - Cleanse
     - Flow-iOS
     - Kingfisher
     - Realm
     - RealmSwift
     - RSLoadingView
+    - RxCocoa
+    - RxRelay
+    - RxSwift
     - SwiftyJSON
 
 SPEC CHECKSUMS:
   Alamofire: 3b6a534a3df22db367e4dedeeca73d1ddfcf0e2f
+  Cleanse: 6bfc62033dcc0e5ba7992f410a5352ddd1283551
   Flow-iOS: c18edbb04f7efd695e8cc4b3810bbb4452b4831e
   Kingfisher: 6e1a13523fcb1c86924ce53affe4ac957e544d59
   Realm: 072f4060c99150cb1d35e35ce1dd4dda7d9ddfed
   RealmSwift: 96f96feafee63186789419235d14857dae9004ae
   RSLoadingView: c7749afdd455229643e8f34277d0695973a15b1a
+  RxCocoa: 38445a25751be5907f52f7ea02c137f52ce2e7f2
+  RxRelay: b9e2483e83f46e4e7bf1234c6fe418e5c2eaf825
+  RxSwift: ada35be6643bedf6881cdbd6bbfb27aeea527670
   SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
 
-PODFILE CHECKSUM: 748e7721ebe3b6da3639c8df074911b6e2e2a802
+PODFILE CHECKSUM: 9f868963221176a517fc2bcc43423163fac988ba
 
 COCOAPODS: 1.10.0
