@@ -1,21 +1,22 @@
 import Foundation
 import SwiftyJSON
-import RealmSwift
+import CoreData
 
-
-class PhotoData: Object {
-  @objc dynamic var id: Int64 = 0
-  @objc dynamic var title: String!
-  @objc dynamic var url: String!
-  @objc dynamic var thumbnailUrl: String!
-  
-  override static func primaryKey() -> String? {
-    return "id"
+@objc(PhotoData)
+public class PhotoData: NSManagedObject {
+  @nonobjc public class func makeFetchRequest() -> NSFetchRequest<PhotoData> {
+      return NSFetchRequest<PhotoData>(entityName: "PhotoData")
   }
   
+  @NSManaged public var id: Int32
+  @NSManaged public var title: String!
+  @NSManaged public var url: String!
+  @NSManaged public var thumbnailUrl: String!
+  
   static func parse(json: JSON) -> PhotoData {
-    let obj = PhotoData()
-    obj.id = json["id"].int64Value
+    let appDelegate = UIApplication.shared.delegate as! AppDelegate
+    let obj = PhotoData(context: appDelegate.persistentContainer.viewContext)
+    obj.id = json["id"].int32Value
     obj.title = json["title"].stringValue
     obj.url = json["url"].stringValue
     obj.thumbnailUrl = json["thumbnailUrl"].stringValue
@@ -32,7 +33,8 @@ class PhotoData: Object {
   }
   
   func clone() -> PhotoData {
-    let obj = PhotoData()
+    let appDelegate = UIApplication.shared.delegate as! AppDelegate
+    let obj = PhotoData(context: appDelegate.persistentContainer.viewContext)
     obj.id = self.id
     obj.title = self.title
     obj.url = self.url
@@ -40,7 +42,8 @@ class PhotoData: Object {
     return obj
   }
   
-  override var description: String {
-    return "[Photo] \(id)"
+  public override var description: String {
+    return title
+    
   }
 }

@@ -18,8 +18,10 @@ class PhotoListViewController: BaseViewController {
     super.viewDidLoad()
     tableView.registerNibCell(PhotoTableViewCell.self)
     tableDataManager = TableDataManager(tableView: tableView)
-    tableDataManager.willReloadTriggedByUser = {
-      DataRepository.shared.clearPhotoCaches()
+    tableDataManager.willReloadTriggedByUser = { [weak self] in
+      guard let self = self else { return }
+      self.viewModel.clearPhotoCaches()
+      self.loadData()
     }
     searchTextField.rx.text.orEmpty.debounce(.milliseconds(1000), scheduler: MainScheduler.instance)
       .subscribe(onNext: { [weak self] text in
@@ -37,7 +39,7 @@ class PhotoListViewController: BaseViewController {
       }).disposed(by: disposeBag)
   }
   
-  func loadData(fromCache: Bool) {
+  func loadData() {
     guard let keyword = searchTextField.text else { return }
     viewModel.search(keyword: keyword)
   }

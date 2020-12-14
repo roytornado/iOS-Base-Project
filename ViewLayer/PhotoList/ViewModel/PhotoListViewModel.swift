@@ -8,6 +8,7 @@ protocol PhotoListViewModelInterface {
   var isLoading: PublishSubject<Bool> { get }
   // MARK: Events
   func search(keyword: String)
+  func clearPhotoCaches()
 }
 
 final class PhotoListViewModel: PhotoListViewModelInterface {
@@ -19,7 +20,7 @@ final class PhotoListViewModel: PhotoListViewModelInterface {
   
   init(injectedDataRepository: Cleanse.Provider<DataRepository>) {
     dataRepository = injectedDataRepository.get()
-    query.distinctUntilChanged().flatMapLatest { text -> Single<[PhotoData]> in
+    query.flatMapLatest { text -> Single<[PhotoData]> in
       self.isLoading.onNext(true)
       return self.executeQuery(keyword: text)
     }
@@ -38,6 +39,10 @@ final class PhotoListViewModel: PhotoListViewModelInterface {
   
   func search(keyword: String) {
     query.onNext(keyword)
+  }
+  
+  func clearPhotoCaches() {
+    dataRepository.clearPhotoCaches()
   }
   
   func executeQuery(keyword: String) -> Single<[PhotoData]> {

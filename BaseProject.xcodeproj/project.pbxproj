@@ -13,6 +13,7 @@
 		56A05E5025864F8200A5A655 /* AppComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A05E4F25864F8200A5A655 /* AppComponent.swift */; };
 		56A05E54258654CC00A5A655 /* ViewLayerMoudles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A05E53258654CC00A5A655 /* ViewLayerMoudles.swift */; };
 		56A05E6625879ADF00A5A655 /* ModelLayerMoudles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A05E6525879ADF00A5A655 /* ModelLayerMoudles.swift */; };
+		56A05E702587A01D00A5A655 /* CoreDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 56A05E6E2587A01D00A5A655 /* CoreDataModel.xcdatamodeld */; };
 		56CA56372567ABE60038071B /* LoadPhotoListOp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56CA56362567ABE60038071B /* LoadPhotoListOp.swift */; };
 		56CA563A2567ABEF0038071B /* RSTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56CA56392567ABEF0038071B /* RSTableView.swift */; };
 		56CA563D2567ABF60038071B /* TableDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56CA563C2567ABF60038071B /* TableDataManager.swift */; };
@@ -54,6 +55,7 @@
 		56A05E4F25864F8200A5A655 /* AppComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppComponent.swift; sourceTree = "<group>"; };
 		56A05E53258654CC00A5A655 /* ViewLayerMoudles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewLayerMoudles.swift; sourceTree = "<group>"; };
 		56A05E6525879ADF00A5A655 /* ModelLayerMoudles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelLayerMoudles.swift; sourceTree = "<group>"; };
+		56A05E6F2587A01D00A5A655 /* CoreDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataModel.xcdatamodel; sourceTree = "<group>"; };
 		56CA56362567ABE60038071B /* LoadPhotoListOp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadPhotoListOp.swift; sourceTree = "<group>"; };
 		56CA56392567ABEF0038071B /* RSTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSTableView.swift; sourceTree = "<group>"; };
 		56CA563C2567ABF60038071B /* TableDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableDataManager.swift; sourceTree = "<group>"; };
@@ -194,6 +196,7 @@
 				56FC7FEB256790E200983E84 /* APIClient.swift */,
 				56FC7FED256790E200983E84 /* DataRepository.swift */,
 				56FC7FEC256790E200983E84 /* NetworkManager.swift */,
+				56A05E6E2587A01D00A5A655 /* CoreDataModel.xcdatamodeld */,
 			);
 			path = ModelLayer;
 			sourceTree = "<group>";
@@ -445,6 +448,7 @@
 				56FC8016256790E200983E84 /* ResHeader.swift in Sources */,
 				56A05E1625840D0200A5A655 /* PaginatedViewData.swift in Sources */,
 				56A05E032583E1FA00A5A655 /* PhotoListViewModel.swift in Sources */,
+				56A05E702587A01D00A5A655 /* CoreDataModel.xcdatamodeld in Sources */,
 				56FC8001256790E200983E84 /* RSTextField.swift in Sources */,
 				56A05E5025864F8200A5A655 /* AppComponent.swift in Sources */,
 				56CA56372567ABE60038071B /* LoadPhotoListOp.swift in Sources */,
@@ -656,6 +660,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		56A05E6E2587A01D00A5A655 /* CoreDataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				56A05E6F2587A01D00A5A655 /* CoreDataModel.xcdatamodel */,
+			);
+			currentVersion = 56A05E6F2587A01D00A5A655 /* CoreDataModel.xcdatamodel */;
+			path = CoreDataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 56FC7F9D256690F800983E84 /* Project object */;
 }

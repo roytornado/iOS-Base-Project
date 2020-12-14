@@ -1,6 +1,5 @@
 import UIKit
 import Flow_iOS
-import RealmSwift
 
 class SavePhotoListOp: FlowOperation {
   override func mainLogic() {
@@ -9,18 +8,19 @@ class SavePhotoListOp: FlowOperation {
       return
     }
     guard let photoList: [PhotoData] = getData(name: "photoList") else { return }
-    let clonedPhotoList = photoList.map { $0.clone() }
-    let realm = try! Realm()
-    do {
-      try realm.write {
-        realm.delete(realm.objects(PhotoData.self))
-        realm.add(clonedPhotoList)
-        LogManager.info("[SavePhotoListOp]: Photos Cached")
+    
+    DispatchQueue.main.async {
+      let appDelegate = UIApplication.shared.delegate as! AppDelegate
+      do {
+        if photoList.count > 0 && appDelegate.persistentContainer.viewContext.hasChanges {
+          try appDelegate.persistentContainer.viewContext.save()
+        }
+        self.finishSuccessfully()
+      } catch {
+        self.finishWithError(error: Constants.errorLoadData)
       }
-      finishSuccessfully()
-    } catch {
-      finishWithError(error: Constants.errorLoadData)
     }
+    startWithAsynchronous()
   }
 }
 

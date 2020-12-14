@@ -8,7 +8,6 @@ def base_pods
   pod 'Kingfisher'
   pod 'SwiftyJSON'
   pod 'RSLoadingView'
-  pod 'RealmSwift'
   pod "Flow-iOS"
   pod 'RxSwift', '6.0.0-rc.2'
   pod 'RxCocoa', '6.0.0-rc.2'
